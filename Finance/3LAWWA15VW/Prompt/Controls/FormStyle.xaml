@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:nxp="http://schemas.microsoft.com/netfx/2007/xaml/presentation"
+                    xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                    xmlns:pbsforms="clr-namespace:PBS.Deals.FormsIntegration;assembly=PBS.Deals.FormsIntegration"
+                    xmlns:vw="clr-namespace:PBS.Comms.VWCommunication.Contract;assembly=PBS.Comms.VWCommunication.Contract"
+                    xmlns:l="clr-namespace:_3LAWWA15VW">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/PBS.Deals.FormsIntegration;component/Styles/AristoTheme.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/PBS.Comms.VWCommunication.Contract;component/UI/Common/ConverterResources.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedSingleRowTabControl.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

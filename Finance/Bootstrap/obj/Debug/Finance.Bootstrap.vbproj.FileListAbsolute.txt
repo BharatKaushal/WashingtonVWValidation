@@ -1,0 +1,18 @@
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\Bootstrap\obj\Debug\Finance.Bootstrap.vbprojResolveAssemblyReference.cache
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\Bootstrap\obj\Debug\Bootstrap.Resources.resources
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\Bootstrap\obj\Debug\Finance.Bootstrap.vbproj.GenerateResource.Cache
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\Bootstrap\obj\Debug\Bootstrap.exe.licenses
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\Bootstrap\obj\Debug\Bootstrap.exe
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\Bootstrap\obj\Debug\Bootstrap.xml
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\Bootstrap\obj\Debug\Bootstrap.pdb
+C:\DvtAristo\9.12.0\_Environment\Bootstrap.exe.config
+C:\DvtAristo\9.12.0\_Environment\Bootstrap.exe
+C:\DvtAristo\9.12.0\_Environment\Bootstrap.pdb
+C:\DvtAristo\9.12.0\_Environment\Bootstrap.xml
+C:\Projects\git\WashingtonVWValidation\Finance\Bootstrap\obj\Debug\Finance.Bootstrap.vbprojResolveAssemblyReference.cache
+C:\Projects\git\WashingtonVWValidation\Finance\Bootstrap\obj\Debug\Bootstrap.Resources.resources
+C:\Projects\git\WashingtonVWValidation\Finance\Bootstrap\obj\Debug\Finance.Bootstrap.vbproj.GenerateResource.Cache
+C:\Projects\git\WashingtonVWValidation\Finance\Bootstrap\obj\Debug\Bootstrap.exe.licenses
+C:\Projects\git\WashingtonVWValidation\Finance\Bootstrap\obj\Debug\Bootstrap.exe
+C:\Projects\git\WashingtonVWValidation\Finance\Bootstrap\obj\Debug\Bootstrap.xml
+C:\Projects\git\WashingtonVWValidation\Finance\Bootstrap\obj\Debug\Bootstrap.pdb

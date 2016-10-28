@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2443921-1380-4399-B970-A8213F994ECF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>_3LAWWA15VW</RootNamespace>
+    <AssemblyName>3LAWWA15VW</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\bin\</OutputPath>
+    <DocumentationFile>3LAWWA15VW.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\DvtAristo\build_VWContract\_Environment\</OutputPath>
+    <DocumentationFile>3LAWWA15VW.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveReports.Document, Version=6.2.3681.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ActiveReports.Viewer6, Version=6.2.3681.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ActiveReports6, Version=6.2.3681.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Csla">
+      <HintPath>..\..\..\..\..\..\..\Projects\TFS\Aristo\_Environment\Csla.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.Document.v7, Version=7.1.7470.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DvtAristo\build_VWContract\_Environment\GrapeCity.ActiveReports.Document.v7.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GrapeCity.ActiveReports.v7, Version=7.1.7470.0, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\DvtAristo\build_VWContract\_Environment\GrapeCity.ActiveReports.v7.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Include7, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Projects\git\Aristo\_Environment\Include7.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=0.14.0.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MahApps.Metro.0.14.0.0\lib\net40\MahApps.Metro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PBS.Comms.VWCommunication.Contract">
+      <HintPath>..\..\..\..\..\..\..\Projects\TFS\Aristo\_Environment\PBS.Comms.VWCommunication.Contract.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PBS.Deals.FormsIntegration">
+      <HintPath>..\..\..\..\..\..\..\Projects\git\Aristo\_Environment\PBS.Deals.FormsIntegration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.0.14.0.0\lib\net40\System.Windows.Interactivity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3LAWWA15VW.Calculation.vb" />
+    <Compile Include="3LAWWA15VW.Declaration.vb" />
+    <Compile Include="3LAWWA15VW.vb" />
+    <Compile Include="Extensions.vb" />
+    <Compile Include="Layout\3LEVMN12VW_Front_Layout_P1.Designer.vb">
+      <DependentUpon>3LEVMN12VW_Front_Layout_P1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\3LEVMN12VW_Front_Layout_P1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layout\3LEVMN12VW_Front_Layout_P2.Designer.vb">
+      <DependentUpon>3LEVMN12VW_Front_Layout_P2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\3LEVMN12VW_Front_Layout_P2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layout\3LEVMN12VW_Front_Layout_P3.Designer.vb">
+      <DependentUpon>3LEVMN12VW_Front_Layout_P3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\3LEVMN12VW_Front_Layout_P3.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layout\3LEVMN12VW_Front_Layout_P4.Designer.vb">
+      <DependentUpon>3LEVMN12VW_Front_Layout_P4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\3LEVMN12VW_Front_Layout_P4.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Prompt\3LAWWA15VW.XML.vb" />
+    <Compile Include="Prompt\3LAWWA15VW_ContractDescription.vb" />
+    <Compile Include="Prompt\3LAWWA15VW_View.xaml.vb">
+      <DependentUpon>3LAWWA15VW_View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Prompt\Controls\PromptInfoView.xaml.vb">
+      <DependentUpon>PromptInfoView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Layout\3LEVMN12VW_Front_Layout_P1.resx">
+      <DependentUpon>3LEVMN12VW_Front_Layout_P1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\3LEVMN12VW_Front_Layout_P2.resx">
+      <DependentUpon>3LEVMN12VW_Front_Layout_P2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\3LEVMN12VW_Front_Layout_P3.resx">
+      <DependentUpon>3LEVMN12VW_Front_Layout_P3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\3LEVMN12VW_Front_Layout_P4.resx">
+      <DependentUpon>3LEVMN12VW_Front_Layout_P4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\US_MN_LAW 553_10-2012_N.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Prompt\3LAWWA15VW_View.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Resource Include="Prompt\Controls\FormStyle.xaml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="Prompt\Controls\PromptInfoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="PromptInfoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:l="clr-namespace:_3LAWWA15VW"
+             mc:Ignorable="d"
+             d:DesignWidth="500">
+    <UserControl.Resources>
+        <ResourceDictionary Source="FormStyle.xaml" />
+    </UserControl.Resources>
+    <Grid Grid.IsSharedSizeScope="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" SharedSizeGroup="First"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" >Primary Usage</Label>
+        <ComboBox Grid.Row="0" Grid.Column="1"  x:Name="PrimaryUseCombo" SelectedValue="{Binding Path=VehicleInfo.Use, Converter={StaticResource VehicleUsageToString}}"></ComboBox>
+        <Label Grid.Row="1" Grid.Column="0" >Other Usage (if applicable)</Label>
+        <TextBox Grid.Row="1" Grid.Column="1"  Text="{Binding Path=VehicleInfo.OtherUseDescription}"/>
+        <Label Grid.Row="2" Grid.Column="0" >Waive Finance Charge</Label>
+        <Grid Grid.Row="2" Grid.Column="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" SharedSizeGroup="FirstColumn"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <ComboBox x:Name="FINCHGWaiverComboYN" Grid.Row="0" Grid.Column="0" Width="80"  SelectedValue="{Binding Path=DealInfo.WaiveFINCHG, Converter={StaticResource BooleanToYesNoType}}" />
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0">Date</Label>
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=DealInfo.FINCHGWaiveDate}"></TextBox>
+            </Grid>
+        </Grid>
+        <GroupBox Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Header="Late Charge">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="First"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0"># of Days Grace</Label>
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=VehicleInfo.NumberDaysGrace}"></TextBox>
+                <Label Grid.Row="1" Grid.Column="0">Amount</Label>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=VehicleInfo.LateChargeFlat}"></TextBox>
+                <Label Grid.Row="2" Grid.Column="0">Daily Rate</Label>
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=VehicleInfo.LateChargeRate}"></TextBox>
+            </Grid>
+        </GroupBox>
+        <Label Grid.Row="6" Grid.Column="0" >Seller Assignment</Label>
+        <ComboBox Grid.Row="6" Grid.Column="1"  x:Name="SellerAssignmentCombo" SelectedValue="{Binding Path=ContractSpecificBase.SellerAssignment, Converter={StaticResource FinancialAssignmentToString}}"></ComboBox>
+        <Label Grid.Row="7" Grid.Column="0" Visibility="{Binding DealInfo.GapVisibility}">Gap Term</Label>
+        <TextBox Grid.Row="7" Grid.Column="1" Text="{Binding DealInfo.GapTerm}" Visibility="{Binding DealInfo.GapVisibility}"></TextBox>
+    </Grid>
+</UserControl>

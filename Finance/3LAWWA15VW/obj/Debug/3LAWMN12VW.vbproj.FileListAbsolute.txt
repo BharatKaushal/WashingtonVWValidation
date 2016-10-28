@@ -1,0 +1,19 @@
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\3LAWMN12VW.vbprojResolveAssemblyReference.cache
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\Prompt\3LAWWA15VW_View.g.vb
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\Prompt\Controls\PromptInfoView.g.vb
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\GeneratedInternalTypeHelper.g.vb
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\3LAWMN12VW_MarkupCompile.cache
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\3LAWMN12VW_MarkupCompile.lref
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\3LAWMN12VW.xml
+C:\DvtAristo\9.12.0\_Environment\3LAWMN12VW.dll
+C:\DvtAristo\9.12.0\_Environment\3LAWMN12VW.pdb
+C:\DvtAristo\9.12.0\_Environment\3LAWMN12VW.xml
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\Prompt\3LAWWA15VW_View.baml
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\Prompt\Controls\PromptInfoView.baml
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\3LAWMN12VW.g.resources
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\_3LAWMN12VW._3LAWWA15VW_Front_Layout.resources
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\_3LAWMN12VW.Resources.resources
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\3LAWMN12VW.vbproj.GenerateResource.Cache
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\3LAWMN12VW.dll.licenses
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\3LAWMN12VW.dll
+C:\WorkSpace\Washington VW\FormSpectacle\VW\Validation\Finance\3LAWMN12VW\obj\Debug\3LAWMN12VW.pdb

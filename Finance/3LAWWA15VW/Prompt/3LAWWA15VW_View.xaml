@@ -1,0 +1,155 @@
+﻿<pbsforms:AristoFormPromptWindow x:Class="_3LAWWA15VW_View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:pbsforms="clr-namespace:PBS.Deals.FormsIntegration;assembly=PBS.Deals.FormsIntegration"
+             xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:vw="clr-namespace:PBS.Comms.VWCommunication.Contract;assembly=PBS.Comms.VWCommunication.Contract"
+             xmlns:l="clr-namespace:_3LAWWA15VW"
+             mc:Ignorable="d" 
+             WindowStartupLocation="CenterScreen"
+             Title="LAW 553-MN"
+             SizeToContent="Height"
+             GlowBrush="{DynamicResource AccentColorBrush}"
+             x:Name="PromptWindow" >
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Controls/FormStyle.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <mah:MetroWindow.RightWindowCommands>
+        <mah:WindowCommands>
+            <Button Click="Validate">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="4 0 0 0" Text="Validate"/>
+                </StackPanel>
+            </Button>
+            <Button Click="Submit" Visibility="{Binding IsPBSValidated, Mode=OneWay, Converter={StaticResource BooleanToVisibility}}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="4 0 0 0" Text="Submit"/>
+                </StackPanel>
+            </Button>
+        </mah:WindowCommands>
+    </mah:MetroWindow.RightWindowCommands>
+    <mah:MetroWindow.Flyouts>
+        <mah:FlyoutsControl>
+            <mah:Flyout Header="Validation" Position="Right" Name="validationPnl" Width="{Binding ElementName=PromptWindow, Path=ActualWidth}">
+                <vw:ValidationView DataContext="{Binding RuleSet}"></vw:ValidationView>
+            </mah:Flyout>
+        </mah:FlyoutsControl>
+    </mah:MetroWindow.Flyouts>
+    <Border Style="{DynamicResource ContentBorderStyle}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120" MinHeight="120"></RowDefinition>
+                <RowDefinition MinHeight="90"></RowDefinition>
+                <RowDefinition Height="48" MinHeight="48"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Background="White" Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Image>
+                <Viewbox Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left">
+                    <TextBlock Text="{Binding Path=ContractSpecificBase.Manufacturer, FallbackValue=Volkswagen}"/>
+                </Viewbox>
+                <Viewbox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left">
+                    <TextBlock Text="{Binding Path=ContractSpecificBase.DisplayContractType, FallbackValue='Retail Installment Contract'}"></TextBlock>
+                </Viewbox>
+                <Viewbox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left">
+                    <WrapPanel>
+                        <Label Content="ID"/>
+                        <Label Content="{Binding Path=ContractSpecificBase.FormNumber, FallbackValue=553-MN}"></Label>
+                        <Label Content="Revision"></Label>
+                        <Label Content="{Binding Path=ContractSpecificBase.FormNumber, FallbackValue=08/2010}"></Label>
+                    </WrapPanel>
+                </Viewbox>
+            </Grid>
+            <Grid Grid.Row="0" Grid.ColumnSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="2" Grid.Column="2" Content="Validated" Foreground="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Visibility="{Binding Path=ContractSpecificBase.VWValidated, FallbackValue=Visibility.Hidden, Converter={StaticResource BooleanToVisibility}}"></Label>
+            </Grid>
+            <!--<mah:MetroContentControl>-->
+            <TabControl ItemsSource="{Binding Path=ProcessData}" SelectedIndex="0" Grid.Row="1" SelectionChanged="OnSelectionChanged" Grid.IsSharedSizeScope="True">
+                <TabControl.Resources>
+                    <DataTemplate DataType="{x:Type vw:PromptDataTabItem}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition SharedSizeGroup="TabItemSameSize"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <l:PromptInfoView DataContext="{Binding Path=Content}"></l:PromptInfoView>
+                        </Grid>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type vw:SpecialMarketingProgramInfoTabItem}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition SharedSizeGroup="TabItemSameSize"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <vw:ProgramInfoView  DataContext="{Binding Path=Content}"></vw:ProgramInfoView>
+                        </Grid>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type vw:CouponInfoTabItem}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition SharedSizeGroup="TabItemSameSize"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <vw:CouponInfoView DataContext="{Binding Path=Content}"></vw:CouponInfoView>
+                        </Grid>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type vw:ProcessInfoTabItem}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition SharedSizeGroup="TabItemSameSize"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <vw:ProcessInfoView></vw:ProcessInfoView>
+                        </Grid>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type vw:VehicleInfoTabItem}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition SharedSizeGroup="TabItemSameSize"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <vw:VehicleInfoView></vw:VehicleInfoView>
+                        </Grid>
+                    </DataTemplate>
+                    <DataTemplate DataType="{x:Type vw:ContactInfoTabItem}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition SharedSizeGroup="TabItemSameSize"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <vw:ContactInfoView></vw:ContactInfoView>
+                        </Grid>
+                    </DataTemplate>
+                </TabControl.Resources>
+                <TabControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Path=Header}"></TextBlock>
+                    </DataTemplate>
+                </TabControl.ItemTemplate>
+            </TabControl>
+            <DockPanel Margin="8,0,8,4" Grid.Row="2">
+                <Button Content="Preview" DockPanel.Dock="Right" Width="80" Click="Preview"/>
+                <Button Content="Cancel" DockPanel.Dock="Right" Width="80" Click="Cancel"/>
+                <Button Content="Submit" DockPanel.Dock="Right" Width="80" Click="Submit" Visibility="{Binding IsPBSValidated, Mode=OneWay, Converter={StaticResource BooleanToVisibility}}"/>
+                <Button Content="Validate" DockPanel.Dock="Left" Width="80" Click="Validate"/>
+                <Canvas/>
+            </DockPanel>
+        </Grid>
+    </Border>
+</pbsforms:AristoFormPromptWindow>

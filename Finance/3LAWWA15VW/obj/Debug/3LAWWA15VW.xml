@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+3LAWWA15VW
+</name>
+</assembly>
+<members>
+<member name="T:_3LAWWA15VW._3LAWWA15VW">
+ <summary>
+ Created On 04/10/2015 by JDM
+ Modified On 04/14/2015 by JDM re: Created specifically for CountrySide VW (4104).
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:_3LAWWA15VW.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:_3LAWWA15VW.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:_3LAWWA15VW.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:_3LAWWA15VW._3LAWWA15VW_View">
+<summary>
+_3LAWWA15VW_View
+</summary>
+</member>
+<member name="M:_3LAWWA15VW._3LAWWA15VW_View.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:_3LAWWA15VW.PromptInfoView">
+<summary>
+PromptInfoView
+</summary>
+</member>
+<member name="M:_3LAWWA15VW.PromptInfoView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>
